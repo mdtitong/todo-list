@@ -17,27 +17,29 @@
   align-items: center;
 }
 .app-wrapper {
-  /* background: #000000;  /* fallback for old browsers
-  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  /* background: linear-gradient(to right, #434343, #000000); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- 
- /* background: #494848; */
-  background: #1e130c;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #9a8478, #1e130c);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
+  background-color: rgb(243, 237, 211);
   min-width: 450px;
   min-height: 650px;
   padding: 30px;
-  box-sizing: border-box;
-  border-radius: 10px;
-  box-shadow: 3px 6px 40px #000;
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #efefef;
+  box-shadow:
+    /* The top layer shadow */
+        0 1px 1px rgba(0,0,0,0.15),
+            /* The second layer */
+        0 10px 0 -5px #eee,
+            /* The second layer shadow */
+        0 10px 1px -4px rgba(0,0,0,0.15),
+            /* The third layer */
+        0 20px 0 -10px #eee,
+            /* The third layer shadow */
+        0 20px 1px -9px rgba(0,0,0,0.15);
+    padding: 30px;
 }
 .header h1 {
-  color: #fff;
+  color: rgb(0, 0, 0);
   text-align: center;
   margin: 30px 0;
 }
@@ -47,8 +49,8 @@
   padding: 15px;
   margin-right: 25px;
   font-size: 20px;
-  color: white;
-  background-color: #000;
+  color: rgb(0, 0, 0);
+  background-color: rgb(182, 215, 221);
   border: 1px solid white;
   border-radius: 10px;
 }
@@ -58,15 +60,15 @@
   font-size: 20px;
   border-radius: 10px;
   border: 0;
-  background-color: #f1af71;
-  border: 1px solid white;
+  background-color: #43f517;
+  border: 1px solid rgb(155, 152, 148);
   cursor: pointer;
 }
 .list-item {
   
   display: flex;
   margin: 20px 0;
-  border: 1px solid white;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 10px;
   padding: 10px;
   max-height: 30px;
@@ -104,7 +106,7 @@
   width: 220px;
   background-color: transparent;
   border: none;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 20px;
   padding-left: 10px;
   padding-right: 15px;
